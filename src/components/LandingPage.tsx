@@ -26,7 +26,7 @@ const LandingPage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl font-bold mb-6 leading-tight">
-                ሳሌም ሳኮስ
+                ሳሌም ሳኮስ 123
                 <span className="block text-3xl text-green-200 mt-2">
                   የወንድሞች እና እህቶች ቁጠባና ብድር ኅብረት ስራ ማኅበር
                 </span>
