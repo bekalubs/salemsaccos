@@ -3,7 +3,6 @@ import { Building } from 'lucide-react'
 import RegistrationForm from './components/RegistrationForm'
 import MembersList from './components/MembersList'
 import LandingPage from './components/LandingPage'
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 
 function App() {
   const [currentView, setCurrentView] = useState<'home' | 'register' | 'members'>('home')
@@ -16,7 +15,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
       {/* Header */}
       <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
@@ -100,7 +99,6 @@ function App() {
                 አዲስ ምዝገባ
               </button>
               
-              {/* 
               <button
                 onClick={() => setCurrentView('members')}
                 className={`px-3 py-2 rounded-lg transition-colors text-sm font-medium ${
@@ -111,7 +109,6 @@ function App() {
               >
                 የተመዘገቡ አባላት
               </button>
-              */}
             </nav>
 
             {/* Mobile Menu */}
@@ -176,13 +173,17 @@ function App() {
 
       {/* Main Content */}
       <main>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/register" element={<RegistrationForm />} />
-          <Route path="/members" element={<MembersList />} />
-          {/* Redirect unknown routes to home */}
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
+        {currentView === 'home' && <LandingPage />}
+        {currentView === 'register' && (
+          <div className="py-4 sm:py-8">
+            <RegistrationForm />
+          </div>
+        )}
+        {currentView === 'members' && (
+          <div className="py-4 sm:py-8">
+            <MembersList />
+          </div>
+        )}
       </main>
 
       {/* Footer - Only show on non-home pages */}
@@ -238,7 +239,7 @@ function App() {
           </div>
         </footer>
       )}
-    </Router>
+    </div>
   )
 }
 
