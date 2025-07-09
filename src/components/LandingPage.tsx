@@ -26,14 +26,13 @@ const LandingPage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl font-bold mb-6 leading-tight">
-                ሳሌም ሳኮስ 123
+                ሳሌም ቁጠባና ብድር
                 <span className="block text-3xl text-green-200 mt-2">
-                  የወንድሞች እና እህቶች ቁጠባና ብድር ኅብረት ስራ ማኅበር
+                 እንኳን ወደ ሳሌም ቁጠባ እና ብድር በደኅና መጡ
                 </span>
               </h1>
               <p className="text-xl mb-8 text-green-100 leading-relaxed">
-                ለማህበረሰባችን የተሻለ የኢኮኖሚ ደህንነት እና የፋይናንስ ነጻነት ለማምጣት የተቋቋመ ታማኝ የፋይናንስ ተቋም
-              </p>
+                ሳሌም  በተግባር  የተፈተነ እና መደጋገፍ ያለውን ዋጋ በወጉ የተረዱ አባላት የሚመሰርቱት የፋይናንስ ተቋም ነው።               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-white text-green-700 px-8 py-4 rounded-lg font-semibold hover:bg-green-50 transition-colors flex items-center justify-center">
                   <Users className="w-5 h-5 mr-2" />
