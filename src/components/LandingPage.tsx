@@ -26,9 +26,9 @@ const LandingPage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl font-bold mb-6 leading-tight">
-                ሳሌም ቁጠባና ብድር
+                 እንኳን ወደ ሳሌም 
                 <span className="block text-3xl text-green-200 mt-2">
-                 እንኳን ወደ ሳሌም ቁጠባ እና ብድር በደኅና መጡ
+            ቁጠባ እና ብድር በደኅና መጡ። 
                 </span>
               </h1>
               <p className="text-xl mb-8 text-green-100 leading-relaxed">
